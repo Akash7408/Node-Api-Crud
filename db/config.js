@@ -1,2 +1,10 @@
+// const mysql = require('mysql');
+// const connection = mysql.createConnection({
+//     host: '127.0.0.1',
+//     user: 'root',
+//     password: '',
+//     database: 'admin'
+//   });
+
 const mongoose=require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/college');
+mongoose.connect('mongodb+srv://akashlmp7408:Akash%407408@cluster0.pzfk4pw.mongodb.net/?retryWrites=true&w=majority');

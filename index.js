@@ -1,4 +1,5 @@
 const express = require('express');
+const mysql = require('mysql');
 const app = express();
 const cors = require('cors');
 const PORT = process.env.PORT || 8000;
@@ -7,7 +8,7 @@ const User = require('./db/user');
 app.use(express.json());
 app.use(cors())
  
-app.post('/resister',async(req,res)=>{
+app.post('/register',async(req,res)=>{
     let user = new User(req.body)
     let result = await user.save();
     result=result.toObject();
@@ -41,5 +42,5 @@ app.get("/data/:id", async(req,res)=>{
     })
 
 app.listen(PORT, (req, res) => {
-    console.log('server start')
+    console.log('server start }')
 })
